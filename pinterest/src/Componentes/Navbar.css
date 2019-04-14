@@ -1,0 +1,140 @@
+.container-all{
+    width:90%;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+#medium{
+    align-items:center;
+    box-sizing:border-box;
+    color:rgb(33, 25, 34);
+    display:flex;
+    flex-direction:row;
+    font-size:12px;
+    height:56px;
+    text-size-adjust:100%;
+    width:834px;
+}
+
+#conticon{
+    height: 48px;
+    justify-content: center;
+    padding: 4px;
+    width: 48px;
+}
+
+#icon{
+    height:30px;
+    width:30px;
+    padding: 4px;
+    float: left;
+    filter:brightness(100%);
+}
+
+#cap-input{
+    min-width:407px ;
+    min-height: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+    display: block;
+    flex-basis: 1;
+    flex-shrink: 1;
+    text-size-adjust: 100%;
+}
+
+#lupa{
+    height: 21px;
+    width: 20px;
+    padding: 4px;
+    float: left;
+    position: absolute;
+    margin-left: -365px;
+    margin-top: 5px;
+    
+}
+
+#buscar{
+    margin-left: 4px;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 600;
+    color: grey;
+    height: 40px;
+    line-height: 20px;
+    outline: none;
+    padding: 16px;
+    padding-left: 50px;
+    margin-left: -5px;
+    min-width: 860px;
+    float: left;
+    background-color: rgba(238, 238, 238, 0.911);
+    width: 100%;
+}
+
+#inicio{
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    text-align: left;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -4.px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto Oxygen-Sans,Ubuntu,Cantarell,â€œFira Sansâ€,â€œDroid Sansâ€,Helvetica Neue,Helvetica,"\30D2\30E9\30AE\30CE\89D2\30B4 Pro W3",Hiragino Kaku Gothic Pro,"\30E1\30A4\30EA\30AA",Meiryo,"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF",Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    cursor: pointer;
+    float: right;
+    margin-right: 200px;
+    margin-top: -50px;
+    border-radius: 25px;
+    cursor:pointer;
+}
+
+#siguiendo{
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    text-align: left;
+    color: #8e8e8e;;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -4.px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto Oxygen-Sans,Ubuntu,Cantarell,â€œFira Sansâ€,â€œDroid Sansâ€,Helvetica Neue,Helvetica,"\30D2\30E9\30AE\30CE\89D2\30B4 Pro W3",Hiragino Kaku Gothic Pro,"\30E1\30A4\30EA\30AA",Meiryo,"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF",Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    cursor: pointer;
+    float: right;
+    margin-right: 90px;
+    margin-top: -50px;
+    border-radius: 25px;
+    cursor:pointer;
+
+}
+
+#sara{
+
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    text-align: left;
+    color: #8e8e8e;;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -4.px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto Oxygen-Sans,Ubuntu,Cantarell,â€œFira Sansâ€,â€œDroid Sansâ€,Helvetica Neue,Helvetica,"\30D2\30E9\30AE\30CE\89D2\30B4 Pro W3",Hiragino Kaku Gothic Pro,"\30E1\30A4\30EA\30AA",Meiryo,"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF",Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    cursor: pointer;
+    float: right;
+    margin-right: 25px;
+    margin-top: -50px;
+    border-radius: 25px;
+    cursor:pointer;
+}
+
