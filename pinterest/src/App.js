@@ -18,23 +18,38 @@ class App extends Component {
     }
     this.openModal=this.openModal.bind(this);
     this.closeModal=this.closeModal.bind(this);
+    
+  }
+
+  callingPage=(page)=>{
+    fetch('https://pixabay.com/api/?key=12148037-e56b019734e5094d2a3274cef&image_type=all&orientation=all&page='+page+'&per_page=20&category=feelings')
+    .then(res => res.json())
+    .then((result)=> {
+        console.log([...this.state.items,...result.hits])
+        this.setState({
+          ...this.state,
+          pageCounter: page,
+          items:[...this.state.items,...result.hits]});
+        });
   }
 
   componentDidMount(){
-    fetch('https://pixabay.com/api/?key=12148037-e56b019734e5094d2a3274cef&image_type=all&orientation=all&per_page=100&category=feelings')
-    .then(res => res.json())
-    .then((result)=> {
-          console.log(result)
-          this.setState({
-            items:result.hits});
-          });
+    window.onscroll = () => {
+      if (
+        window.innerHeight + document.documentElement.scrollTop
+        >= document.documentElement.offsetHeight
+      ) {
+        this.callingPage(this.state.pageCounter+1)
+      }
+    };
+    this.callingPage(this.state.pageCounter)
         }
 
   renderImage = (image) => {
     return (
       
-      <div className="item">
-        <img id="img" key={image.id} src={image.previewURL} onClick={(e)=>this.openModal(image)} />
+      <div className="item" key={image.id}>
+        <img id="img"  src={image.previewURL} onClick={(e)=>this.openModal(image)} />
         <div className="container">
           <p id="user">{image.user}</p>
           <p id="user">{image.category}</p>
@@ -60,8 +75,6 @@ class App extends Component {
     modal:false
   })
   }
-
-
 
   render() {
       return(
