@@ -179,6 +179,7 @@ background-color: whitesmoke;
 }
 
 #sarin{
+    position: absolute;
     background-color: rgba(148, 137, 137, 0.726);
     border-style: none;
     border-radius: 50%;
@@ -192,7 +193,8 @@ background-color: whitesmoke;
     text-align: center;
     cursor: pointer;
     float: right;
-    margin-right: 8.5%;
+    margin-right: 0.5%;
+    margin-left: 80.5%;
     margin-top: -42px;
     border-radius: 25px;
     cursor:pointer;padding-right: 0.5%;
