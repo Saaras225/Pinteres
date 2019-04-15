@@ -22,19 +22,13 @@ function Modal (props) {
                     </div>
                     <div className="text-container">
                         <h5>{props.phototitle}</h5>
-                        <button className="btn-follow">Seguir</button>
                         <button className="link">yourphoto.com</button>
-                        {/* <p className="parrafo">You have your tree, your house and your<br/> 
-                        dinner table decorated already. <br/> 
-                        What are you going to do after finishing <br/> 
-                        your holiday decoration and <br/> 
-                        wrapping all the gifts? Don't forget<br/> 
-                        to glam up yourself...Más
-                        </p> */}
+                        <p className="parrafo">Hope you like this photo, if you do...put a like.</p>
+                        <p className="parrafo">Publicado el 14 de Abril de 2019</p>
                         <p className="parrafo">{props.category}</p>
                         <hr className="line"/>
-                        <p className="text">Fotos y comentarios</p>
-                        <button className="btn-numberfotos">3 Fotos</button>
+                        <p className="texto">Fotos y comentarios</p>
+                        <button className="btn-numberfotos"> 10 Fotos</button>
                         <p className="coments">Comentarios</p>
                     </div>
                 </div>
