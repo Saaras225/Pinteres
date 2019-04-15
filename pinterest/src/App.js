@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   callingPage=(page)=>{
-    fetch('https://pixabay.com/api/?key=12148037-e56b019734e5094d2a3274cef&image_type=all&orientation=all&page='+page+'&per_page=20&category=feelings')
+    fetch('https://pixabay.com/api/?key=12148037-e56b019734e5094d2a3274cef&image_type=all&orientation="vertical"&page='+page+'&per_page=20&category=fashion')
     .then(res => res.json())
     .then((result)=> {
         console.log([...this.state.items,...result.hits])
@@ -49,7 +49,7 @@ class App extends Component {
     return (
       
       <div className="item" key={image.id}>
-        <img id="img"  src={image.previewURL} onClick={(e)=>this.openModal(image)} />
+        <img id="img"  src={image.webformatURL} onClick={(e)=>this.openModal(image)} />
         <div className="container">
           <p id="user">{image.user}</p>
           <p id="user">{image.category}</p>
@@ -63,7 +63,7 @@ class App extends Component {
     console.log(image.target);
     this.setState({
     ...this.state,
-    modal:image.previewURL,
+    modal:image.webformatURL,
     title: image.user,
     description:image.category,
   })
