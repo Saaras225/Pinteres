@@ -10,7 +10,7 @@ class Navbar extends Component{
         <form onSubmit={this.obtenerDatos}>
           <div className="container-all">
           <div id="medium">
-          <button id='conticon'><img className="icon" id='icon' src='/Imagenes/pinLogo.png'></img></button>
+          <button id='conticon'><i className='fab fa-pinterest'></i></button>
           <div id='cap-input'>
           <div id='all-input'>
           <img id="lupa" src="/Imagenes/buscador-musical.png"></img>
@@ -23,10 +23,9 @@ class Navbar extends Component{
           <button id="siguiendo">Siguiendo</button>
           <button id="sarin">S</button>
           <button id="sara">Sara</button>
-          <img id="shar" src='/Imagenes/share.png'></img>
-          <img id="bell" src='/Imagenes/bell.jpg'></img>
-          <img id="points" src='/Imagenes/points.jpg'></img>
-
+          <i id="shar" className='fas fa-comment-dots'></i>
+          <i id="bell" className='far fa-bell'></i>
+          <i id="points" className='fas fa-ellipsis-h'></i>
           </div>
           </div>
           </form>
